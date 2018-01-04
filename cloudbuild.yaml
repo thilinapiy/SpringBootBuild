@@ -5,3 +5,4 @@ steps:
   args: ['package']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us.gcr.io/sandbox-10fb8/springbootbuild:$COMMIT_SHA', '.']
+images: ['us.gcr.io/sandbox-10fb8/springbootbuild:$COMMIT_SHA']
